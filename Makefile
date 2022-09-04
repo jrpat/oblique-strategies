@@ -13,6 +13,9 @@ e2:
 e3:
 	curl -s '$(url)/Ed3.html' | $(trim) > $@
 
+index.html: all _index.html
+	perl -pe 's/XXXXX/`cat all`/e' _index.html > $@
+
 clean:
 	rm -f e1 e2 e3 all
 

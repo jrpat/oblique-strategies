@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Oblique Strategies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body { height:100%; width:100%; font-family:sans-serif; }
+body { display:flex; justify-content:center; align-items:center; border:3vw solid #f2f2f2; }
+h1 { font-size:2rem; }
+    </style>
+  </head>
+  <body>
+    <script>
+      let all = `XXXXX`
+      let lines = all.split('\n')
+      let n = ~~(Math.random() * lines.length)
+      document.body.innerHTML = `<h1>${lines[n]}</h1>`
+    </script>
+  </body>
+</html>
+
